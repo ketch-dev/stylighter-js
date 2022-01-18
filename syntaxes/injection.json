@@ -1,0 +1,19 @@
+{
+	"scopeName": "captureOpen",
+	"injectionSelector": "L:source",
+	"patterns": [
+		{
+			"include": "#captureOpen"
+		}
+	],
+	"repository": {
+		"captureOpen": {
+			"name": "none",
+			"begin": "(foo)",
+			"beginCaptures": { "1": { "name": "captureClose" } },
+			"end": "(bar)",
+			"endCaptures": { "1": { "name": "captureClose" } },
+			"patterns": [{ "include": "source.js.jsx#jsx-tag-without-attributes-in-expression" }, { "include": "source.js.jsx#jsx-tag-in-expression" }]
+		}
+	}
+}

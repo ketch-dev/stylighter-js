@@ -1,0 +1,40 @@
+{
+	"name": "extension-name-identifier",
+	"displayName": "EXTENSION_NAME",
+	"description": "EXTENSION_DESCRIPTION",
+	"version": "0.0.1",
+	"engines": {
+		"vscode": "^1.63.0"
+	},
+	"categories": [
+		"Programming Languages"
+	],
+	"contributes": {
+		"languages": [
+			{
+				"id": "language-id",
+				"aliases": [
+					"LANGUAGE_NAME",
+					"language-id"
+				],
+				"extensions": [
+					"FILE_EXTENSIONS"
+				],
+				"configuration": "./language-configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"path": "./syntaxes/injection.json",
+				"scopeName": "captureOpen",
+				"injectTo": [
+          "source.js",
+					"source.ts",
+					"source.jsx",
+					"source.js.jsx",
+					"source.tsx"
+        ]
+			}
+		]
+	}
+}
