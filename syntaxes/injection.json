@@ -1,6 +1,6 @@
 {
 	"scopeName": "captureOpen",
-	"injectionSelector": "source",
+	"injectionSelector": "source.js.jsx",
 	"patterns": [
 		{
 			"include": "#styled-jsx-tag-without-attributes-in-expression"
@@ -88,10 +88,10 @@
 		},
     "styled-jsx-children": {
 			"patterns": [
-        { "include": "source.js.jsx#jsx-tag-without-attributes" },
-				{ "include": "source.js.jsx#jsx-tag" },
 				{ "include": "#styled-jsx-tag-without-attributes" },
         { "include": "#styled-jsx-tag" },
+        { "include": "source.js.jsx#jsx-tag-without-attributes" },
+				{ "include": "source.js.jsx#jsx-tag" },
 				{ "include": "source.js.jsx#jsx-evaluated-code" },
 				{ "include": "source.js.jsx#jsx-entities" }
 			]

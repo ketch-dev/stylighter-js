@@ -2,18 +2,40 @@ import React from 'react';
 
 export const Comp = () => {
 	return (
-    <SC.Component ss='asdfasdf'>
-      <SC.Gdfg dada='dudu'>
-        <div>asdfasdf</div>
-      </SC.Gdfg>
-    </SC.Component>
+		<SC.ComponentWithAttributes attr='true'>
+			<SC.Component>
+				<SC.ComponentWithAttributes2 attr='true'>
+					<div>some div text</div>
+				</SC.ComponentWithAttributes2>
+			</SC.Component>
+		</SC.ComponentWithAttributes>
 	);
 };
 
-<SC.Gdfgdfg>
-  <SC.Dfgsdfg ba='bu'>
-    <SC.Bobus sf='sf'>
+export const Comp2 = () => {
+	return (
+		<SC.Component>
+			<SC.ComponentWithAttributes attr='2'>
+				<SC.Component>
+					<div>some div text</div>
+				</SC.Component>
+			</SC.ComponentWithAttributes>
+		</SC.Component>
+	);
+};
 
-    </SC.Bobus>
-  </SC.Dfgsdfg>
-</SC.Gdfgdfg>
+<SC.ComponentWithAttributes attr='true'>
+  <SC.Component> 
+    <SC.ComponentWithAttributes2 attr='true'>
+      <div>some div text</div>
+    </SC.ComponentWithAttributes2>
+  </SC.Component>
+</SC.ComponentWithAttributes>
+
+<SC.Component>
+	<SC.ComponentWithAttributes attr='2'>
+		<SC.Component>
+			<div>some div text</div>
+		</SC.Component>
+	</SC.ComponentWithAttributes>
+</SC.Component>
