@@ -1,17 +1,17 @@
 import React from 'react';
 
 export const Comp = () => {
-  return (
-    foo
-      <Component>
-        <ComponentTwo>
-          <div>sdfgsdfg</div>
-        </ComponentTwo>
-      </Component>
-    bar
-  )
-}
+	return (
+    <SC.Component>
+      <SC.Gdfg boba='buba'>
+        
+      </SC.Gdfg>
+    </SC.Component>
+	);
+};
 
-foo
-  content
-bar
+
+<SComponent>
+  <SCComp2>
+  </SCComp2>
+</SComponent>
