@@ -2,16 +2,18 @@ import React from 'react';
 
 export const Comp = () => {
 	return (
-    <SC.Component>
-      <SC.Gdfg boba='buba'>
-        
+    <SC.Component ss='asdfasdf'>
+      <SC.Gdfg dada='dudu'>
+        <div>asdfasdf</div>
       </SC.Gdfg>
     </SC.Component>
 	);
 };
 
+<SC.Gdfgdfg>
+  <SC.Dfgsdfg ba='bu'>
+    <SC.Bobus sf='sf'>
 
-<SComponent>
-  <SCComp2>
-  </SCComp2>
-</SComponent>
+    </SC.Bobus>
+  </SC.Dfgsdfg>
+</SC.Gdfgdfg>
