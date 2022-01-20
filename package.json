@@ -1,24 +1,32 @@
 {
-	"name": "extension-name-identifier",
-	"displayName": "EXTENSION_NAME",
-	"description": "EXTENSION_DESCRIPTION",
+	"name": "js-stylighter",
+	"displayName": "Stylighter (JS)",
+	"description": "JSX styled-components syntax highlighter",
 	"version": "0.0.1",
 	"engines": {
 		"vscode": "^1.63.0"
 	},
+  "publisher": "ketch",
 	"categories": [
 		"Programming Languages"
 	],
+  "keywords": [
+    "highlight styled components",
+    "styled components highlight",
+    "styled components highlighter",
+    "styled components syntax highlighting",
+    "styled components syntax highlighter"
+  ],
 	"contributes": {
 		"languages": [
 			{
-				"id": "language-id",
+				"id": "javascriptreact",
 				"aliases": [
-					"LANGUAGE_NAME",
-					"language-id"
+					"JavaScript React",
+					"jsx"
 				],
 				"extensions": [
-					"FILE_EXTENSIONS"
+					".jsx"
 				],
 				"configuration": "./language-configuration.json"
 			}
@@ -26,14 +34,60 @@
 		"grammars": [
 			{
 				"path": "./syntaxes/injection.json",
-				"scopeName": "captureOpen",
-				"injectTo": [
-          "source.js",
-					"source.ts",
-					"source.jsx",
-					"source.js.jsx",
-					"source.tsx"
-        ]
+				"language": "javascriptreact",
+				"scopeName": "source.js.jsx",
+				"embeddedLanguages": {
+					"meta.tag.js": "jsx-tags",
+					"meta.tag.without-attributes.js": "jsx-tags",
+					"meta.tag.attributes.js.jsx": "javascriptreact",
+					"meta.embedded.expression.js": "javascriptreact"
+				},
+				"tokenTypes": {
+					"meta.template.expression": "other",
+					"meta.template.expression string": "string",
+					"meta.template.expression comment": "comment",
+					"entity.name.type.instance.jsdoc": "other",
+					"entity.name.function.tagged-template": "other",
+					"meta.import string.quoted": "other",
+					"variable.other.jsdoc": "other"
+				}
+			}
+		],
+		"semanticTokenScopes": [
+			{
+				"language": "javascriptreact",
+				"scopes": {
+					"property": [
+						"variable.other.property.jsx"
+					],
+					"property.readonly": [
+						"variable.other.constant.property.jsx"
+					],
+					"variable": [
+						"variable.other.readwrite.jsx"
+					],
+					"variable.readonly": [
+						"variable.other.constant.object.jsx"
+					],
+					"function": [
+						"entity.name.function.jsx"
+					],
+					"namespace": [
+						"entity.name.type.module.jsx"
+					],
+					"variable.defaultLibrary": [
+						"support.variable.js"
+					],
+					"function.defaultLibrary": [
+						"support.function.js"
+					]
+				}
+			}
+		],
+		"snippets": [
+			{
+				"language": "javascriptreact",
+				"path": "./snippets/javascript.code-snippets"
 			}
 		]
 	}
