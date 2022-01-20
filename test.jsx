@@ -15,11 +15,13 @@ export const Comp = () => {
 export const Comp2 = () => {
 	return (
 		<SC.Component>
-			<SC.ComponentWithAttributes attr='2'>
-				<SC.Component>
-					<div>some div text</div>
-				</SC.Component>
-			</SC.ComponentWithAttributes>
+      <SC.Component2>
+        <sffomponentWithAttributes attr='2'>
+          <SC.Component>
+            <div>some div text</div>
+          </SC.Component>
+        </sffomponentWithAttributes>
+      </SC.Component2>
 		</SC.Component>
 	);
 };
@@ -39,3 +41,15 @@ export const Comp2 = () => {
 		</SC.Component>
 	</SC.ComponentWithAttributes>
 </SC.Component>
+
+export const Sf = () => (
+  <SC.Fgdfg>
+    <SC.DFGdfg></SC.DFGdfg>
+  </SC.Fgdfg>
+)
+
+foo
+  <SC.Sdfgdf>
+    
+  </SC.Sdfgdf>
+bar
