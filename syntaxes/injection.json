@@ -2572,25 +2572,31 @@
 		},
 		"jsx-tag-without-attributes": {
 			"name": "meta.tag.without-attributes.js.jsx",
-			"begin": "(<)\\s*(?:([_$[:alpha:]][-_$[:alnum:].]*)(?<!\\.|-)(:))?((?:[a-z][a-z0-9]*|([S][C][.][_$[:alpha:]][-_$[:alnum:].]*)|([_$[:alpha:]][-_$[:alnum:].]*))(?<!\\.|-))?\\s*(>)",
-			"end": "(</)\\s*(?:([_$[:alpha:]][-_$[:alnum:].]*)(?<!\\.|-)(:))?((?:[a-z][a-z0-9]*|([S][C][.][_$[:alpha:]][-_$[:alnum:].]*)|([_$[:alpha:]][-_$[:alnum:].]*))(?<!\\.|-))?\\s*(>)",
+			"begin": "(<)\\s*(?:([_$[:alpha:]][-_$[:alnum:].]*)(?<!\\.|-)(:))?((?:[a-z][a-z0-9]*|([S][.][_$[:alpha:]][-_$[:alnum:].]*)|([S][S][.][_$[:alpha:]][-_$[:alnum:].]*)|([S][t][y][l][e][d][.][_$[:alpha:]][-_$[:alnum:].]*)|([S][h][a][r][e][d][S][t][y][l][e][d][.][_$[:alpha:]][-_$[:alnum:].]*)|([_$[:alpha:]][-_$[:alnum:].]*))(?<!\\.|-))?\\s*(>)",
+			"end": "(</)\\s*(?:([_$[:alpha:]][-_$[:alnum:].]*)(?<!\\.|-)(:))?((?:[a-z][a-z0-9]*|([S][.][_$[:alpha:]][-_$[:alnum:].]*)|([S][S][.][_$[:alpha:]][-_$[:alnum:].]*)|([S][t][y][l][e][d][.][_$[:alpha:]][-_$[:alnum:].]*)|([S][h][a][r][e][d][S][t][y][l][e][d][.][_$[:alpha:]][-_$[:alnum:].]*)|([_$[:alpha:]][-_$[:alnum:].]*))(?<!\\.|-))?\\s*(>)",
 			"beginCaptures": {
 				"1": { "name": "punctuation.definition.tag.begin.js.jsx" },
 				"2": { "name": "entity.name.tag.namespace.js.jsx" },
 				"3": { "name": "punctuation.separator.namespace.js.jsx" },
 				"4": { "name": "entity.name.tag.js.jsx" },
-				"5": { "name": "captureOpen" },
-				"6": { "name": "support.class.component.js.jsx" },
-				"7": { "name": "punctuation.definition.tag.end.js.jsx" }
+				"5": { "name": "styled.component.name.s" },
+				"6": { "name": "styled.component.name.ss" },
+				"7": { "name": "styled.component.name.styled" },
+				"8": { "name": "styled.component.name.sharedstyled" },
+				"9": { "name": "support.class.component.js.jsx" },
+				"10": { "name": "punctuation.definition.tag.end.js.jsx" }
 			},
 			"endCaptures": {
 				"1": { "name": "punctuation.definition.tag.begin.js.jsx" },
 				"2": { "name": "entity.name.tag.namespace.js.jsx" },
 				"3": { "name": "punctuation.separator.namespace.js.jsx" },
 				"4": { "name": "entity.name.tag.js.jsx" },
-				"5": { "name": "captureOpen" },
-				"6": { "name": "support.class.component.js.jsx" },
-				"7": { "name": "punctuation.definition.tag.end.js.jsx" }
+				"5": { "name": "styled.component.s" },
+        "6": { "name": "styled.component.name.ss" },
+				"7": { "name": "styled.component.name.styled" },
+				"8": { "name": "styled.component.name.sharedstyled" },
+				"9": { "name": "support.class.component.js.jsx" },
+				"10": { "name": "punctuation.definition.tag.end.js.jsx" }
 			},
 			"contentName": "meta.jsx.children.js.jsx",
 			"patterns": [{ "include": "#jsx-children" }]
@@ -2603,27 +2609,33 @@
 		"jsx-tag": {
 			"name": "meta.tag.js.jsx",
 			"begin": "(?=(<)\\s*(?:([_$[:alpha:]][-_$[:alnum:].]*)(?<!\\.|-)(:))?((?:[a-z][a-z0-9]*|([_$[:alpha:]][-_$[:alnum:].]*))(?<!\\.|-))(?=((<\\s*)|(\\s+))(?!\\?)|\\/?>))",
-			"end": "(/>)|(?:(</)\\s*(?:([_$[:alpha:]][-_$[:alnum:].]*)(?<!\\.|-)(:))?((?:[a-z][a-z0-9]*|([S][C][.][_$[:alpha:]][-_$[:alnum:].]*)|([_$[:alpha:]][-_$[:alnum:].]*))(?<!\\.|-))?\\s*(>))",
+			"end": "(/>)|(?:(</)\\s*(?:([_$[:alpha:]][-_$[:alnum:].]*)(?<!\\.|-)(:))?((?:[a-z][a-z0-9]*|([S][.][_$[:alpha:]][-_$[:alnum:].]*)|([S][S][.][_$[:alpha:]][-_$[:alnum:].]*)|([S][t][y][l][e][d][.][_$[:alpha:]][-_$[:alnum:].]*)|([S][h][a][r][e][d][S][t][y][l][e][d][.][_$[:alpha:]][-_$[:alnum:].]*)|([_$[:alpha:]][-_$[:alnum:].]*))(?<!\\.|-))?\\s*(>))",
 			"endCaptures": {
 				"1": { "name": "punctuation.definition.tag.end.js.jsx" },
 				"2": { "name": "punctuation.definition.tag.begin.js.jsx" },
 				"3": { "name": "entity.name.tag.namespace.js.jsx" },
 				"4": { "name": "punctuation.separator.namespace.js.jsx" },
 				"5": { "name": "entity.name.tag.js.jsx" },
-				"6": { "name": "captureOpen" },
-				"7": { "name": "support.class.component.js.jsx" },
-				"8": { "name": "punctuation.definition.tag.end.js.jsx" }
+				"6": { "name": "styled.component.name.s" },
+        "7": { "name": "styled.component.name.ss" },
+				"8": { "name": "styled.component.name.styled" },
+				"9": { "name": "styled.component.name.sharedstyled" },
+				"10": { "name": "support.class.component.js.jsx" },
+				"11": { "name": "punctuation.definition.tag.end.js.jsx" }
 			},
 			"patterns": [
 				{
-					"begin": "(<)\\s*(?:([_$[:alpha:]][-_$[:alnum:].]*)(?<!\\.|-)(:))?((?:[a-z][a-z0-9]*|([S][C][.][_$[:alpha:]][-_$[:alnum:].]*)|([_$[:alpha:]][-_$[:alnum:].]*))(?<!\\.|-))(?=((<\\s*)|(\\s+))(?!\\?)|\\/?>)",
+					"begin": "(<)\\s*(?:([_$[:alpha:]][-_$[:alnum:].]*)(?<!\\.|-)(:))?((?:[a-z][a-z0-9]*|([S][.][_$[:alpha:]][-_$[:alnum:].]*)|([S][S][.][_$[:alpha:]][-_$[:alnum:].]*)|([S][t][y][l][e][d][.][_$[:alpha:]][-_$[:alnum:].]*)|([S][h][a][r][e][d][S][t][y][l][e][d][.][_$[:alpha:]][-_$[:alnum:].]*)|([_$[:alpha:]][-_$[:alnum:].]*))(?<!\\.|-))(?=((<\\s*)|(\\s+))(?!\\?)|\\/?>)",
 					"beginCaptures": {
 						"1": { "name": "punctuation.definition.tag.begin.js.jsx" },
 						"2": { "name": "entity.name.tag.namespace.js.jsx" },
 						"3": { "name": "punctuation.separator.namespace.js.jsx" },
 						"4": { "name": "entity.name.tag.js.jsx" },
-						"5": { "name": "captureOpen" },
-						"6": { "name": "support.class.component.js.jsx" }
+						"5": { "name": "styled.component.name.s" },
+            "6": { "name": "styled.component.name.ss" },
+            "7": { "name": "styled.component.name.styled" },
+            "8": { "name": "styled.component.name.sharedstyled" },
+						"9": { "name": "support.class.component.js.jsx" }
 					},
 					"end": "(?=[/]?>)",
 					"patterns": [{ "include": "#comment" }, { "include": "#type-arguments" }, { "include": "#jsx-tag-attributes" }]
