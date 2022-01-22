@@ -2572,8 +2572,8 @@
 		},
 		"jsx-tag-without-attributes": {
 			"name": "meta.tag.without-attributes.js.jsx",
-			"begin": "(<)\\s*(?:([_$[:alpha:]][-_$[:alnum:].]*)(?<!\\.|-)(:))?((?:[a-z][a-z0-9]*|([S][.][_$[:alpha:]][-_$[:alnum:].]*)|([S][S][.][_$[:alpha:]][-_$[:alnum:].]*)|([S][t][y][l][e][d][.][_$[:alpha:]][-_$[:alnum:].]*)|([S][h][a][r][e][d][S][t][y][l][e][d][.][_$[:alpha:]][-_$[:alnum:].]*)|([_$[:alpha:]][-_$[:alnum:].]*))(?<!\\.|-))?\\s*(>)",
-			"end": "(</)\\s*(?:([_$[:alpha:]][-_$[:alnum:].]*)(?<!\\.|-)(:))?((?:[a-z][a-z0-9]*|([S][.][_$[:alpha:]][-_$[:alnum:].]*)|([S][S][.][_$[:alpha:]][-_$[:alnum:].]*)|([S][t][y][l][e][d][.][_$[:alpha:]][-_$[:alnum:].]*)|([S][h][a][r][e][d][S][t][y][l][e][d][.][_$[:alpha:]][-_$[:alnum:].]*)|([_$[:alpha:]][-_$[:alnum:].]*))(?<!\\.|-))?\\s*(>)",
+			"begin": "(<)\\s*(?:([_$[:alpha:]][-_$[:alnum:].]*)(?<!\\.|-)(:))?((?:[a-z][a-z0-9]*|([S][S][S][.][_$[:alpha:]][-_$[:alnum:].]*)|([S][S][.][_$[:alpha:]][-_$[:alnum:].]*)|([S][t][y][l][e][d][.][_$[:alpha:]][-_$[:alnum:].]*)|([S][h][a][r][e][d][S][t][y][l][e][d][.][_$[:alpha:]][-_$[:alnum:].]*)|([_$[:alpha:]][-_$[:alnum:].]*))(?<!\\.|-))?\\s*(>)",
+			"end": "(</)\\s*(?:([_$[:alpha:]][-_$[:alnum:].]*)(?<!\\.|-)(:))?((?:[a-z][a-z0-9]*|([S][S][S][.][_$[:alpha:]][-_$[:alnum:].]*)|([S][S][.][_$[:alpha:]][-_$[:alnum:].]*)|([S][t][y][l][e][d][.][_$[:alpha:]][-_$[:alnum:].]*)|([S][h][a][r][e][d][S][t][y][l][e][d][.][_$[:alpha:]][-_$[:alnum:].]*)|([_$[:alpha:]][-_$[:alnum:].]*))(?<!\\.|-))?\\s*(>)",
 			"beginCaptures": {
 				"1": { "name": "punctuation.definition.tag.begin.js.jsx" },
 				"2": { "name": "entity.name.tag.namespace.js.jsx" },
