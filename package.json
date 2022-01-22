@@ -2,21 +2,21 @@
 	"name": "js-stylighter",
 	"displayName": "Stylighter (JS)",
 	"description": "JSX styled-components syntax highlighter",
-	"version": "0.0.1",
+	"version": "0.1.0",
 	"engines": {
 		"vscode": "^1.63.0"
 	},
-  "publisher": "ketch",
+	"publisher": "ketch",
 	"categories": [
 		"Programming Languages"
 	],
-  "keywords": [
-    "highlight styled components",
-    "styled components highlight",
-    "styled components highlighter",
-    "styled components syntax highlighting",
-    "styled components syntax highlighter"
-  ],
+	"keywords": [
+		"highlight styled components",
+		"styled components highlight",
+		"styled components highlighter",
+		"styled components syntax highlighting",
+		"styled components syntax highlighter"
+	],
 	"contributes": {
 		"languages": [
 			{
