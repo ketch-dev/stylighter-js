@@ -2591,7 +2591,7 @@
 				"2": { "name": "entity.name.tag.namespace.js.jsx" },
 				"3": { "name": "punctuation.separator.namespace.js.jsx" },
 				"4": { "name": "entity.name.tag.js.jsx" },
-				"5": { "name": "styled.component.s" },
+				"5": { "name": "styled.component.name.s" },
         "6": { "name": "styled.component.name.ss" },
 				"7": { "name": "styled.component.name.styled" },
 				"8": { "name": "styled.component.name.sharedstyled" },
