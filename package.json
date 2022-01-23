@@ -2,8 +2,8 @@
 	"name": "js-stylighter",
 	"displayName": "Stylighter (JS)",
 	"description": "JSX styled-components syntax highlighter",
-  "icon": "images/stylighter-js-logo.png",
-	"version": "0.4.0",
+	"icon": "images/stylighter-js-logo.png",
+	"version": "0.4.1",
 	"engines": {
 		"vscode": "^1.63.0"
 	},
